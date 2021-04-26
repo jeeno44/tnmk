@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Category;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,7 +23,14 @@ Route::group(['prefix' => 'category', 'as' => 'category.'], function () {
 
     Route::get('/', [App\Http\Controllers\CategoryController::class, 'index'])->name('index');
 
-    Route::get('setting', [App\Http\Controllers\CategoryController::class, 'settingIndex'])->name('setting.index');
-    Route::post('setting', [App\Http\Controllers\CategoryController::class, 'settingSave'])->name('setting.save');
+    Route::get('settings', [App\Http\Controllers\CategoryController::class, 'settingIndex'])->name('settings.index');
+
+    /* Получаем все категории в древовидном виде */
+    Route::post('getcats',[App\Http\Controllers\CategoryController::class, 'getCategories']);
+    /* Ищем продукты по ГОСТ-у (поле fields) */
+    Route::post('findprods',[App\Http\Controllers\CategoryController::class, 'findprods']);
+
+    /* Сохранение категорий */
+    Route::post('setnewcats',[App\Http\Controllers\CategoryController::class, 'setnewcats']);
 
 });

@@ -9,6 +9,10 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <script src="https://cdn.jsdelivr.net/npm/vue" type="text/javascript"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     @hasSection('script')
@@ -21,6 +25,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    @yield("styles")
+
 </head>
 <body>
     <div id="app">
@@ -41,7 +48,7 @@
                                 <a class="nav-link" href="{{ route('category.index') }}">Категории</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('category.setting.index') }}">Настройки</a>
+                                <a class="nav-link" href="{{ route('category.settings.index') }}">Настройки</a>
                             </li>
                         @endauth
                     </ul>
@@ -89,5 +96,9 @@
             @yield('content')
         </main>
     </div>
+@yield("comps")
+
+@yield("vue")
+
 </body>
 </html>

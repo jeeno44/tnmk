@@ -11,8 +11,8 @@ class Prod extends Model
 
     protected $fillable = ['category_id', 'title', 'fields'];
 
-    public function category() {//получение марки запчасти
-        return $this->hasOne(Category::class, 'id', 'category_id');
+    public function category() {
+        return $this->hasOne(Category::class, 'id','category_id');
     }
 
     protected $casts = [
