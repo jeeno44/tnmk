@@ -73,32 +73,36 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-10">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">Категории</div>
 
                     <div class="card-body" id="cent">
 
-                        <form method="post" @submit.prevent="searchGost">
+                        <div class="col-md-6">
+                            <form method="post" @submit.prevent="searchGost">
 
-                            <div class="form-group">
-                                <label for="search">Поиск :</label>
-                                <input type="text" class="form-control" id="search" name="search" v-model="search">
-                            </div>
+                                <div class="form-group">
+                                    <label for="search">Поиск :</label>
+                                    <input type="text" class="form-control" id="search" name="search" v-model="search">
+                                </div>
 
-                            <input type="submit" value="Send" class="btn btn-primary">
-                            <button type="button" class="btn btn-warning" @click="clearField">Clear</button>
+                                <input type="submit" value="Send" class="btn btn-primary">
+                                <button type="button" class="btn btn-warning" @click="clearField">Clear</button>
 
-                        </form>
+                            </form>
 
-                        <div v-if="nothing">
-                            <p></p>
-                            <hr>
-                            <p></p>
-                            <div class="alert alert-danger" role="alert">
-                                <i><b>Ничего не найдено...</b></i>
+                            <div v-if="nothing">
+                                <p></p>
+                                <hr>
+                                <p></p>
+                                <div class="alert alert-danger" role="alert">
+                                    <i><b>Ничего не найдено...</b></i>
+                                </div>
                             </div>
                         </div>
+
+
 
                         <p></p>
                         <hr>
