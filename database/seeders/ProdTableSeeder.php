@@ -13,8 +13,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 8,
             'title' => 'Товар ГОСТ 1',
             'fields' => [
-                'ГОСТ'=> 1,
-                'Характеристика' => 'ламповый товар',
+                'ГОСТ'=> 1
             ]
         ],
         1 => [
@@ -22,8 +21,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 8,
             'title' => 'Товар ГОСТ 1',
             'fields' => [
-                'ГОСТ'=> 1,
-                'Характеристика' => 'привлекательный товар',
+                'ГОСТ'=> 1
             ]
         ],
         2 => [
@@ -31,8 +29,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 9,
             'title' => 'Товар ГОСТ 2',
             'fields' => [
-                'ГОСТ'=> 2,
-                'Характеристика' => 'продающий товар',
+                'ГОСТ'=> 2
             ]
         ],
         3 => [
@@ -40,8 +37,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 9,
             'title' => 'Товар ГОСТ 2',
             'fields' => [
-                'ГОСТ'=> 2,
-                'Характеристика' => 'широкий товар',
+                'ГОСТ'=> 2
             ]
         ],
         4 => [
@@ -49,8 +45,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 10,
             'title' => 'Товар ГОСТ 3',
             'fields' => [
-                'ГОСТ'=> 3,
-                'Характеристика' => 'просторный товар',
+                'ГОСТ'=> 3
             ]
         ],
         5 => [
@@ -58,8 +53,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 10,
             'title' => 'Товар ГОСТ 3',
             'fields' => [
-                'ГОСТ'=> 3,
-                'Характеристика' => 'классный товар',
+                'ГОСТ'=> 3
             ]
         ],
         6 => [
@@ -67,8 +61,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 11,
             'title' => 'Товар ГОСТ 4',
             'fields' => [
-                'ГОСТ'=> 4,
-                'Характеристика' => 'ограниченный товар',
+                'ГОСТ'=> 4
             ]
         ],
         7 => [
@@ -76,8 +69,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 11,
             'title' => 'Товар ГОСТ 4',
             'fields' => [
-                'ГОСТ'=> 4,
-                'Характеристика' => 'странный товар',
+                'ГОСТ'=> 4
             ]
         ],
         8 => [
@@ -85,8 +77,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 12,
             'title' => 'Товар ГОСТ 5',
             'fields' => [
-                'ГОСТ'=> 5,
-                'Характеристика' => 'новый товар',
+                'ГОСТ'=> 5
             ]
         ],
         9 => [
@@ -94,8 +85,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 12,
             'title' => 'Товар ГОСТ 5',
             'fields' => [
-                'ГОСТ'=> 5,
-                'Характеристика' => 'старый товар',
+                'ГОСТ'=> 5
             ]
         ],
         10 => [
@@ -103,8 +93,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 13,
             'title' => 'Товар ГОСТ 6',
             'fields' => [
-                'ГОСТ'=> 6,
-                'Характеристика' => 'олдскульный товар',
+                'ГОСТ'=> 6
             ]
         ],
         11 => [
@@ -112,8 +101,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 13,
             'title' => 'Товар ГОСТ 6',
             'fields' => [
-                'ГОСТ'=> 6,
-                'Характеристика' => 'попсовый товар',
+                'ГОСТ'=> 6
             ]
         ],
         12 => [
@@ -121,8 +109,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 17,
             'title' => 'Товар ГОСТ 7',
             'fields' => [
-                'ГОСТ'=> 7,
-                'Характеристика' => 'легкодостпный товар',
+                'ГОСТ'=> 7
             ]
         ],
         13 => [
@@ -130,8 +117,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 17,
             'title' => 'Товар ГОСТ 7',
             'fields' => [
-                'ГОСТ'=> 7,
-                'Характеристика' => 'популярный товар',
+                'ГОСТ'=> 7
             ]
         ],
         14 => [
@@ -139,8 +125,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 19,
             'title' => 'Товар ГОСТ 22',
             'fields' => [
-                'ГОСТ'=> 22,
-                'Характеристика' => 'хайповый товар',
+                'ГОСТ'=> 22
             ]
         ],
         15 => [
@@ -148,8 +133,7 @@ class ProdTableSeeder extends Seeder
             'category_id' => 19,
             'title' => 'Товар ГОСТ 22',
             'fields' => [
-                'ГОСТ'=> 22,
-                'Характеристика' => 'красивый товар',
+                'ГОСТ'=> 22
             ]
         ],
     ];

@@ -78,7 +78,7 @@
                         {{--END Отображаем список категорий--}}
 
                         <hr>
-                        <form action="{{ route('category.setting.save') }}" method="POST">
+                        <form action="#" method="POST">
                             @csrf
                             <input type="hidden" id="sort" name="sort" value="">
                             <button type="submit" class="btn btn-outline-success">Сохранить</button>

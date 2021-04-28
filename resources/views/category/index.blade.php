@@ -13,57 +13,6 @@
             border-right: 0 none;
         }
 
-        .bless1{margin-left: 0px;}
-        .bless2{margin-left: 20px;}
-        .bless3{margin-left: 40px;}
-        .bless4{margin-left: 60px;}
-        .bless5{margin-left: 80px;}
-        .bless6{margin-left: 100px;}
-        .bless7{margin-left: 120px;}
-        .bless8{margin-left: 140px;}
-        .bless9{margin-left: 160px;}
-        .bless10{margin-left: 180px;}
-        .bless11{margin-left: 200px}
-        .bless12{margin-left: 220px}
-        .bless13{margin-left: 240px}
-        .bless14{margin-left: 260px}
-        .bless15{margin-left: 280px}
-        .bless16{margin-left: 300px}
-        .bless17{margin-left: 320px}
-        .bless18{margin-left: 340px}
-        .bless19{margin-left: 360px}
-        .bless20{margin-left: 380px}
-        .bless21{margin-left: 400px}
-        .bless22{margin-left: 420px}
-        .bless23{margin-left: 440px}
-        .bless24{margin-left: 460px}
-        .bless25{margin-left: 480px}
-        .bless26{margin-left: 500px}
-        .bless27{margin-left: 520px}
-        .bless28{margin-left: 540px}
-        .bless29{margin-left: 560px}
-        .bless30{margin-left: 580px}
-        .bless31{margin-left: 600px}
-        .bless32{margin-left: 620px}
-        .bless33{margin-left: 640px}
-        .bless34{margin-left: 660px}
-        .bless35{margin-left: 680px}
-        .bless36{margin-left: 700px}
-        .bless37{margin-left: 720px}
-        .bless38{margin-left: 740px}
-        .bless39{margin-left: 760px}
-        .bless40{margin-left: 780px}
-        .bless41{margin-left: 800px}
-        .bless42{margin-left: 820px}
-        .bless43{margin-left: 840px}
-        .bless44{margin-left: 860px}
-        .bless45{margin-left: 880px}
-        .bless46{margin-left: 900px}
-        .bless47{margin-left: 920px}
-        .bless48{margin-left: 940px}
-        .bless49{margin-left: 960px}
-        .bless50{margin-left: 980px}
-
     </style>
 
 @endsection
@@ -92,7 +41,7 @@
 
                             </form>
 
-                            <div v-if="nothing">
+                            <div v-if="nothing && this.search.trim().length > 0">
                                 <p></p>
                                 <hr>
                                 <p></p>
@@ -130,8 +79,8 @@
     <template id="tree">
         <div class="">
             <ul class="list-group" v-for="i in list">
-                <li class="list-group-item" :class="'bless'+i.level"
-                    :style="(find.includes(i.id)) ? 'background-color: #ff8991' : ''">@{{ i.title }}</li>
+                <li class="list-group-item"
+                    :style="{backgroundColor:(find.includes(i.id)) ? '#ff8991' : '',marginLeft:(i.level-1) * 20 +'px'}">@{{ i.title }}</li>
                 <tree :list="i.children" v-if="i.children && i.children.length > 0" :find="find"></tree>
             </ul>
         </div>
@@ -168,9 +117,9 @@
                     this.finded = '';
                 },
                 searchGost(){
-                    if (this.search.trim().length >= 3){
+                    if (this.search.trim().length > 0){
                         axios.post('/category/findprods',{search:this.search}).then(response => {
-                            // console.log(response.data);
+                            console.log(response.data);
                             if (response.data == "empty"){
                                 this.nothing = true;
                             }

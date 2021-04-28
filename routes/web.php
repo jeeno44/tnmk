@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Category;
+use App\Http\Controllers\ProdController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -28,9 +29,15 @@ Route::group(['prefix' => 'category', 'as' => 'category.'], function () {
     /* Получаем все категории в древовидном виде */
     Route::post('getcats',[App\Http\Controllers\CategoryController::class, 'getCategories']);
     /* Ищем продукты по ГОСТ-у (поле fields) */
-    Route::post('findprods',[App\Http\Controllers\CategoryController::class, 'findprods']);
+    Route::post('findprods',[App\Http\Controllers\ProdController::class, 'findprods']);
 
     /* Сохранение категорий */
     Route::post('setnewcats',[App\Http\Controllers\CategoryController::class, 'setnewcats']);
+
+    Route::get('set0',function (){
+
+        return view("category.setting0");
+
+    });
 
 });

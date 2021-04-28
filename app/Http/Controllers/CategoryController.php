@@ -25,7 +25,7 @@ class CategoryController extends Controller
         /* Получаем все категории и сортируем их по колонке queue(очередь) */
         /* Выбираем не все поля, а только - 'id','parent_id','title','level','queue' */
         /* Для последующей манипуляции */
-        $categories = Category::with("children")->where('user_id','=',Auth::user()->id)->orderBy("queue")->get(['id','parent_id','title','level','queue'])->toArray();
+        $categories = Category::with("children")->orderBy("queue")->get(['id','parent_id','title','level','queue'])->toArray();
 
         /* Функция построения дерева из результатов выборки из БД */
         function buildTree(array $elements, $parentId = 0) {
@@ -59,23 +59,4 @@ class CategoryController extends Controller
 
         return "OK";
     }
-
-    /* Метод поиска продуктов и связанных с ними категорий */
-    public function findprods (Request $request)
-    {
-        $find = \App\Models\Prod::where('fields','like','%'.$request->search.'%')->get();
-
-        $cats = [];
-
-        if (count($find) > 0){
-            foreach ($find as $item) {
-                $cats[] = $item->category_id;
-            }
-            return $cats;
-        }
-        else{
-            return "empty";
-        }
-    }
-
 }
