@@ -10,7 +10,6 @@ class CategoryTableSeeder extends Seeder
     static $category = [
         0 => [
             'id' => 1,
-            'user_id' => 1,
             'parent_id' => NULL,
             'title' => 'Цветной металлопрокат',
             'level' => 1,
@@ -18,7 +17,6 @@ class CategoryTableSeeder extends Seeder
         ],
         1 => [
             'id' => 2,
-            'user_id' => 1,
             'parent_id' => NULL,
             'title' => 'Нержавеющий металлопрокат',
             'level' => 1,
@@ -27,7 +25,6 @@ class CategoryTableSeeder extends Seeder
         ],
         2 => [
             'id' => 3,
-            'user_id' => 1,
             'parent_id' => NULL,
             'title' => 'Черный металлопрокат',
             'level' => 1,
@@ -35,7 +32,6 @@ class CategoryTableSeeder extends Seeder
         ],
         3 => [
             'id' => 4,
-            'user_id' => 1,
             'parent_id' => NULL,
             'title' => 'Цветной металлопрокат',
             'level' => 1,
@@ -43,7 +39,6 @@ class CategoryTableSeeder extends Seeder
         ],
         4 => [
             'id' => 5,
-            'user_id' => 1,
             'parent_id' => 1,
             'title' => 'Анод',
             'level' => 2,
@@ -51,7 +46,6 @@ class CategoryTableSeeder extends Seeder
         ],
         5 => [
             'id' => 6,
-            'user_id' => 1,
             'parent_id' => 1,
             'title' => 'Балка',
             'level' => 2,
@@ -59,7 +53,6 @@ class CategoryTableSeeder extends Seeder
         ],
         6 => [
             'id' => 7,
-            'user_id' => 1,
             'parent_id' => 1,
             'title' => 'Брусок',
             'level' => 2,
@@ -67,7 +60,6 @@ class CategoryTableSeeder extends Seeder
         ],
         7 => [
             'id' => 8,
-            'user_id' => 1,
             'parent_id' => 5,
             'title' => 'Анод кадмий',
             'level' => 3,
@@ -75,7 +67,6 @@ class CategoryTableSeeder extends Seeder
         ],
         8 => [
             'id' => 9,
-            'user_id' => 1,
             'parent_id' => 5,
             'title' => 'Анод медный',
             'level' => 3,
@@ -83,7 +74,6 @@ class CategoryTableSeeder extends Seeder
         ],
         9 => [
             'id' => 10,
-            'user_id' => 1,
             'parent_id' => 5,
             'title' => 'Анод никелевый',
             'level' => 3,
@@ -91,7 +81,6 @@ class CategoryTableSeeder extends Seeder
         ],
         10 => [
             'id' => 11,
-            'user_id' => 1,
             'parent_id' => 6,
             'title' => 'Балка Алюминиевая',
             'level' => 3,
@@ -99,7 +88,6 @@ class CategoryTableSeeder extends Seeder
         ],
         11 => [
             'id' => 12,
-            'user_id' => 1,
             'parent_id' => 6,
             'title' => 'Балка магниевая',
             'level' => 3,
@@ -107,7 +95,6 @@ class CategoryTableSeeder extends Seeder
         ],
         12 => [
             'id' => 13,
-            'user_id' => 1,
             'parent_id' => 7,
             'title' => 'Брусок Молибденовый',
             'level' => 3,
@@ -115,7 +102,6 @@ class CategoryTableSeeder extends Seeder
         ],
         13 => [
             'id' => 14,
-            'user_id' => 1,
             'parent_id' => 7,
             'title' => 'Брусок олово',
             'level' => 3,
@@ -123,7 +109,6 @@ class CategoryTableSeeder extends Seeder
         ],
         14 => [
             'id' => 15,
-            'user_id' => 1,
             'parent_id' => 2,
             'title' => 'Балка',
             'level' => 2,
@@ -131,7 +116,6 @@ class CategoryTableSeeder extends Seeder
         ],
         15 => [
             'id' => 16,
-            'user_id' => 1,
             'parent_id' => 2,
             'title' => 'Втулка',
             'level' => 2,
@@ -139,7 +123,6 @@ class CategoryTableSeeder extends Seeder
         ],
         16 => [
             'id' => 17,
-            'user_id' => 1,
             'parent_id' => 2,
             'title' => 'Дробь',
             'level' => 2,
@@ -147,7 +130,6 @@ class CategoryTableSeeder extends Seeder
         ],
         17 => [
             'id' => 18,
-            'user_id' => 1,
             'parent_id' => 3,
             'title' => 'Арматура',
             'level' => 2,
@@ -155,7 +137,6 @@ class CategoryTableSeeder extends Seeder
         ],
         18 => [
             'id' => 19,
-            'user_id' => 1,
             'parent_id' => 3,
             'title' => 'Балка',
             'level' => 2,
@@ -163,7 +144,6 @@ class CategoryTableSeeder extends Seeder
         ],
         19 => [
             'id' => 20,
-            'user_id' => 1,
             'parent_id' => 3,
             'title' => 'Баллон',
             'level' => 2,
@@ -171,7 +151,6 @@ class CategoryTableSeeder extends Seeder
         ],
         20 => [
             'id' => 21,
-            'user_id' => 1,
             'parent_id' => 9,
             'title' => 'Придаток',
             'level' => 4,
@@ -179,7 +158,6 @@ class CategoryTableSeeder extends Seeder
         ],
         21 => [
             'id' => 22,
-            'user_id' => 1,
             'parent_id' => 9,
             'title' => 'Задаток',
             'level' => 4,

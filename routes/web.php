@@ -40,4 +40,5 @@ Route::group(['prefix' => 'category', 'as' => 'category.'], function () {
 
     });
 
+
 });

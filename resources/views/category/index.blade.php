@@ -119,7 +119,7 @@
                 searchGost(){
                     if (this.search.trim().length > 0){
                         axios.post('/category/findprods',{search:this.search}).then(response => {
-                            console.log(response.data);
+                            // console.log(response.data);
                             if (response.data == "empty"){
                                 this.nothing = true;
                             }
